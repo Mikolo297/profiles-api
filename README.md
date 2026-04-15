@@ -6,7 +6,7 @@ A REST API that accepts a name, calls three external APIs (Genderize, Agify, Nat
 
 ## Live API
 
-> **Base URL:** `https://YOUR-DEPLOYED-URL.up.railway.app`
+> **Base URL:** https://profiles-api-production-206d.up.railway.app/api/profiles
 
 ---
 
@@ -39,7 +39,7 @@ Filter values are **case-insensitive**.
 ### Steps
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/profiles-api.git
+git clone https://github.com/Mikolo297/profiles-api
 cd profiles-api
 npm install
 cp .env.example .env
@@ -47,12 +47,12 @@ cp .env.example .env
 npm start
 ```
 
-Server runs on `http://localhost:3000`
+Server runs on `http://localhost:8080`
 
 ### Test it
 ```bash
 # Create a profile
-curl -X POST http://localhost:3000/api/profiles \
+curl -X POST http://localhost:8080/api/profiles \
   -H "Content-Type: application/json" \
   -d '{"name": "james"}'
 
