@@ -16,6 +16,7 @@ async function initDB() {
       age                 INTEGER,
       age_group           TEXT,
       country_id          TEXT,
+      country_name        TEXT,
       country_probability NUMERIC,
       created_at          TIMESTAMPTZ NOT NULL DEFAULT NOW()
     );
