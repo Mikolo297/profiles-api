@@ -1,4 +1,4 @@
-# Insighta API — Stage 2 Backend: Intelligence Query Engine
+#  Stage 2 Backend: Intelligence Query Engine
 
 A queryable demographic intelligence REST API. Stores 2026 profiles collected from Genderize, Agify, and Nationalize APIs. Supports advanced filtering, sorting, pagination, and natural language search.
 
