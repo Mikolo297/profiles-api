@@ -1,0 +1,144 @@
+name,gender,gender_probability,age,age_group,country_id,country_name,country_probability
+Awino Hassan,female,0.66,68,senior,TZ,Tanzania,0.6
+Mercy Agyei,female,0.79,9,child,NG,Nigeria,0.11
+Hassan Girma,male,0.85,37,adult,UG,Uganda,0.38
+Nabil Saidi,male,0.8,80,senior,SD,Sudan,0.49
+Kimberly Scott,female,0.9,5,child,US,United States,0.34
+Nandi Girma,female,0.8,57,adult,MG,Madagascar,0.4
+John Adams,male,0.98,37,adult,GB,United Kingdom,0.52
+Elizabeth Harris,female,0.77,32,adult,IN,India,0.11
+Anne Kasavubu,female,0.88,43,adult,CM,Cameroon,0.29
+Yaa Adomou,female,0.78,50,adult,CV,Cape Verde,0.28
+Miséricorde Eyeghe,female,0.88,45,adult,CG,Republic of the Congo,0.36
+Odhiambo Kamau,male,0.7,64,senior,MZ,Mozambique,0.48
+Zanele Moyo,female,0.9,58,adult,ZA,South Africa,0.6
+Paul Sidibé,male,0.75,40,adult,ML,Mali,0.23
+Tafadzwa Cele,male,0.92,37,adult,ZA,South Africa,0.5
+Tanaka Khumalo,male,0.9,24,adult,ZA,South Africa,0.5
+Thandiwe Dube,female,0.81,15,teenager,AO,Angola,0.52
+Tendai Mwangi,male,0.75,6,child,TZ,Tanzania,0.4
+Susan Edwards,female,0.83,54,adult,IN,India,0.42
+Véronique Mukendi,female,0.77,55,adult,CD,DR Congo,0.24
+Kevin King,male,0.68,35,adult,FR,France,0.62
+Zanele Mnguni,female,0.68,30,adult,KE,Kenya,0.85
+Tadesse Achieng,male,0.83,34,adult,UG,Uganda,0.49
+Rakiya Otieno,female,0.97,14,teenager,KE,Kenya,0.38
+Mazvita Ndebele,female,0.76,50,adult,ZM,Zambia,0.91
+Carol Green,female,0.81,55,adult,GB,United Kingdom,0.65
+Kagiso Mohamed,male,0.98,7,child,ER,Eritrea,0.43
+Nomsa Ouma,female,0.94,42,adult,UG,Uganda,0.31
+Sadiya Awino,female,0.7,17,teenager,TZ,Tanzania,0.24
+Fortuné Mboumba,male,0.95,17,teenager,GA,Gabon,0.53
+Ayasha Kamau,female,0.82,46,adult,RW,Rwanda,0.68
+Adaeze Coulibaly,female,0.73,41,adult,NG,Nigeria,0.6
+Adhiambo Mnguni,female,0.79,83,senior,KE,Kenya,0.47
+Maame Kaboré,female,0.8,56,adult,SN,Senegal,0.29
+Rumbidzai Mnguni,female,0.96,32,adult,NA,Namibia,0.26
+Généreuse Mboumba,female,0.71,40,adult,CD,DR Congo,0.39
+Bayo Ouédraogo,male,0.99,27,adult,NG,Nigeria,0.81
+Joseph Scott,male,0.83,83,senior,GB,United Kingdom,0.22
+Laila Saidi,female,0.66,52,adult,SD,Sudan,0.57
+Sipho Mnguni,male,0.75,60,senior,KE,Kenya,0.35
+Esi Sawadogo,female,0.68,46,adult,GM,Gambia,0.18
+Kunle Gbessi,male,0.84,61,senior,CI,Côte d'Ivoire,0.72
+Nour Rachidi,female,0.78,32,adult,SD,Sudan,0.56
+Tesfaye Ahmed,male,0.89,58,adult,MZ,Mozambique,0.88
+Aster Getachew,female,0.75,41,adult,ET,Ethiopia,0.85
+Bilkisu Abebe,female,0.65,24,adult,TZ,Tanzania,0.94
+Walid Hajji,male,0.71,29,adult,MA,Morocco,0.51
+Zodwa Bekele,female,0.81,36,adult,MW,Malawi,0.95
+Andrew Thomas,male,0.66,28,adult,BR,Brazil,0.49
+Kunle Zinsou,male,0.73,10,child,ML,Mali,0.94
+Maryam Odhiambo,female,0.67,18,teenager,TZ,Tanzania,0.24
+Ikram Benali,female,0.69,50,adult,TN,Tunisia,0.24
+James Allen,male,0.83,14,teenager,FR,France,0.9
+Abdi Getachew,male,0.75,74,senior,KE,Kenya,0.21
+Bongiwe Moyo,female,0.88,56,adult,ZA,South Africa,0.21
+Thandeka Kamau,female,0.87,49,adult,SO,Somalia,0.93
+Rokhaya Konaté,female,0.76,17,teenager,NG,Nigeria,0.53
+Nandi Mnguni,female,0.7,28,adult,NA,Namibia,0.59
+Michael Campbell,male,0.65,58,adult,US,United States,0.28
+Hamza Amrani,male,0.87,47,adult,TN,Tunisia,0.86
+Assata Touré,female,0.83,29,adult,GH,Ghana,0.27
+Richard Torres,male,0.87,56,adult,US,United States,0.79
+Nokwanda Mpofu,female,0.7,38,adult,ZW,Zimbabwe,0.49
+Aya Khatib,female,0.66,49,adult,EG,Egypt,0.77
+Cheikh Bah,male,0.92,27,adult,GH,Ghana,0.56
+Akua Konaté,female,0.9,77,senior,BJ,Benin,0.72
+Jacques Obiang,male,0.83,88,senior,CD,DR Congo,0.88
+Chisom Okonkwo,female,0.81,29,adult,EH,Western Sahara,0.1
+Sandra Parker,female,0.7,54,adult,US,United States,0.88
+Laura Thomas,female,0.79,35,adult,AU,Australia,0.6
+Patient Bongo,male,0.84,57,adult,CD,DR Congo,0.66
+Younes Amrani,male,0.71,37,adult,MA,Morocco,0.19
+Kenneth Jackson,male,0.72,48,adult,GB,United Kingdom,0.65
+Wangari Khumalo,female,0.76,85,senior,ET,Ethiopia,0.55
+Ndéye Agyei,female,0.91,66,senior,SN,Senegal,0.72
+Karen Allen,female,0.8,90,senior,GB,United Kingdom,0.37
+Munashe Mthembu,male,0.96,45,adult,ZM,Zambia,0.26
+David Flores,male,0.72,25,adult,US,United States,0.21
+René Kalonji,male,0.95,81,senior,CD,DR Congo,0.25
+Mengistu Mengistu,male,0.75,43,adult,UG,Uganda,0.56
+Andrew Anderson,male,0.71,5,child,AU,Australia,0.11
+George Garcia,male,0.68,78,senior,CN,China,0.36
+Thandeka Dlamini,female,0.91,5,child,BW,Botswana,0.6
+Mumbi Masondo,female,0.96,57,adult,KE,Kenya,0.44
+Elizabeth Perez,female,0.87,47,adult,FR,France,0.24
+Hassan Lamrani,male,0.72,51,adult,EG,Egypt,0.93
+Amina Ndlovu,female,0.79,55,adult,MG,Madagascar,0.23
+Yaa Tapsoba,female,0.74,22,adult,GH,Ghana,0.34
+Mekdes Tadesse,female,0.97,20,adult,MZ,Mozambique,0.55
+Ismail Eze,male,0.78,62,senior,BJ,Benin,0.57
+Théodore Keïta,male,0.91,9,child,GH,Ghana,0.38
+Laura Mitchell,female,0.97,26,adult,CA,Canada,0.5
+Awino Jama,female,0.91,19,teenager,KE,Kenya,0.49
+Akosua Darko,female,0.7,72,senior,NG,Nigeria,0.72
+Assata Kaboré,female,0.9,14,teenager,LR,Liberia,0.58
+Christopher Nguyen,male,0.85,16,teenager,US,United States,0.69
+Didier Lokossou,male,0.87,23,adult,BJ,Benin,0.46
+Gary Hill,male,0.96,48,adult,GB,United Kingdom,0.78
+Paul Bongo,male,0.79,57,adult,CM,Cameroon,0.24
+Waweru Alemu,male,0.85,66,senior,ER,Eritrea,0.25
+Kimberly Hill,female,0.82,21,adult,US,United States,0.29
+Nompumelelo Bekele,female,0.7,69,senior,ET,Ethiopia,0.71
+Joy Camara,female,0.71,56,adult,MR,Mauritania,0.55
+Nabil Amrani,male,0.69,47,adult,MA,Morocco,0.3
+Assata Compaoré,female,0.73,41,adult,GH,Ghana,0.78
+Tesfaye Nkosi,male,0.86,8,child,ET,Ethiopia,0.52
+Mumbi Hassan,female,0.76,52,adult,ET,Ethiopia,0.79
+Jason Jackson,male,0.65,5,child,IN,India,0.65
+Adhiambo Farah,female,0.79,10,child,BI,Burundi,0.6
+Cheikh Agyei,male,0.79,49,adult,NG,Nigeria,0.19
+Kunle Zongo,male,0.73,6,child,ML,Mali,0.74
+Simba Ndebele,male,0.84,56,adult,AO,Angola,0.72
+Omar Abdi,male,0.87,25,adult,ET,Ethiopia,0.19
+Farah Desta,male,0.99,18,teenager,KE,Kenya,0.7
+Hirut Warsame,female,0.77,31,adult,ET,Ethiopia,0.26
+Afia Adomou,female,0.9,81,senior,BJ,Benin,0.32
+Amira Alaoui,female,0.66,66,senior,TN,Tunisia,0.15
+Mercy Coulibaly,female,0.77,89,senior,BF,Burkina Faso,0.42
+Siham Khalil,female,0.86,55,adult,MA,Morocco,0.28
+Richard Segla,male,0.89,55,adult,SN,Senegal,0.27
+Jason Phillips,male,0.91,30,adult,CN,China,0.72
+Halima Omar,female,0.83,25,adult,RW,Rwanda,0.53
+Bintou Segla,female,0.83,69,senior,NG,Nigeria,0.62
+François Bongo,male,0.77,19,teenager,CF,Central African Republic,0.92
+Aster Ndlovu,female,0.82,13,teenager,MU,Mauritius,0.44
+Njoroge Nkosi,male,0.7,81,senior,TZ,Tanzania,0.89
+Yaa Compaoré,female,0.85,32,adult,MR,Mauritania,0.15
+Youssef Amrani,male,0.76,52,adult,DZ,Algeria,0.75
+Gloire Obiang,female,0.65,37,adult,CD,DR Congo,0.23
+Jeanne Nkoghe,female,0.97,10,child,CD,DR Congo,0.85
+Adhiambo Waweru,female,0.71,85,senior,MG,Madagascar,0.82
+Joy Sow,female,0.81,17,teenager,ML,Mali,0.2
+Estelle Asante,female,0.89,31,adult,NG,Nigeria,0.5
+Thomas White,male,0.69,20,adult,IN,India,0.73
+Ashley Roberts,female,0.9,32,adult,GB,United Kingdom,0.67
+Efua Agbodji,female,0.99,18,teenager,CI,Côte d'Ivoire,0.2
+Otieno Mnguni,male,0.78,29,adult,KE,Kenya,0.63
+Tafadzwa Khumalo,male,0.74,45,adult,ZW,Zimbabwe,0.16
+Wangari Adhiambo,female,0.75,35,adult,ET,Ethiopia,0.55
+André Nguema,male,0.74,28,adult,CG,Republic of the Congo,0.26
+Nokwanda Sibanda,female,0.71,19,teenager,ZA,South Africa,0.5
+Laila Rachidi,female,0.94,30,adult,MA,Morocco,0.1
+Zanele Getachew,female,0.91,29,adult,RW,Rwanda,0.34
