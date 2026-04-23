@@ -1,9 +1,15 @@
 require('dotenv').config();
-const pool = require('./db');
+const { Pool } = require('pg');
 const { uuidv7 } = require('./utils/uuid');
 const { getCountryName } = require('./utils/apis');
 const fs = require('fs');
 const path = require('path');
+
+// Own pool — does NOT import db.js to avoid race condition with initDB
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+});
 
 function parseCSV(content) {
   const lines = content.trim().split('\n');
@@ -23,12 +29,36 @@ function classifyAgeGroup(age) {
   return 'senior';
 }
 
+async function ensureTable() {
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS profiles (
+      id         TEXT PRIMARY KEY,
+      name       TEXT NOT NULL UNIQUE,
+      gender     TEXT,
+      gender_probability  NUMERIC,
+      sample_size         INTEGER,
+      age                 INTEGER,
+      age_group           TEXT,
+      country_id          TEXT,
+      country_name        TEXT,
+      country_probability NUMERIC,
+      created_at          TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    );
+  `);
+  await pool.query(`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS country_name TEXT;`);
+  await pool.query(`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS age_group TEXT;`);
+  await pool.query(`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS sample_size INTEGER;`);
+  await pool.query(`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS gender_probability NUMERIC;`);
+  await pool.query(`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS country_probability NUMERIC;`);
+}
+
 async function seed() {
+  await ensureTable();
+
   const csvPath = path.join(__dirname, 'data', 'profiles.csv');
 
   if (!fs.existsSync(csvPath)) {
     console.error('Seed file not found at data/profiles.csv');
-    console.error('Please download the seed file from the task brief and place it at data/profiles.csv');
     process.exit(1);
   }
 
@@ -46,6 +76,7 @@ async function seed() {
 
     const age = parseInt(row.age) || null;
     const countryId = (row.country_id || '').trim().toUpperCase();
+    const countryName = (row.country_name || '').trim() || getCountryName(countryId);
 
     try {
       const result = await pool.query(
@@ -63,7 +94,7 @@ async function seed() {
           age,
           age ? classifyAgeGroup(age) : (row.age_group || '').trim(),
           countryId,
-          getCountryName(countryId),
+          countryName,
           parseFloat(row.country_probability) || null,
           row.created_at ? new Date(row.created_at).toISOString() : new Date().toISOString(),
         ]
