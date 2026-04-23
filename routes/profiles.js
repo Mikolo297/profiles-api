@@ -176,10 +176,12 @@ router.post('/', async (req, res) => {
   if (typeof name !== 'string')
     return res.status(422).json({ status: 'error', message: 'Name must be a string' });
 
-  const cleanName = name.trim().toLowerCase();
+  const cleanName = name.trim();
 
   try {
-    const existing = await pool.query('SELECT * FROM profiles WHERE name = $1', [cleanName]);
+    const existing = await pool.query(
+      'SELECT * FROM profiles WHERE LOWER(name) = LOWER($1)', [cleanName]
+    );
     if (existing.rows.length > 0) {
       return res.status(200).json({
         status: 'success',

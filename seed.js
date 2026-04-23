@@ -41,7 +41,7 @@ async function seed() {
   let skipped = 0;
 
   for (const row of rows) {
-    const name = (row.name || '').trim().toLowerCase();
+    const name = (row.name || '').trim();
     if (!name) continue;
 
     const age = parseInt(row.age) || null;
