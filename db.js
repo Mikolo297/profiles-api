@@ -29,6 +29,16 @@ async function initDB() {
   await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_age        ON profiles (age);`);
   await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_created_at ON profiles (created_at);`);
 
+  // Migration: add any columns that may be missing from older schema versions
+  await pool.query(`
+    ALTER TABLE profiles
+      ADD COLUMN IF NOT EXISTS country_name TEXT,
+      ADD COLUMN IF NOT EXISTS age_group TEXT,
+      ADD COLUMN IF NOT EXISTS sample_size INTEGER,
+      ADD COLUMN IF NOT EXISTS gender_probability NUMERIC,
+      ADD COLUMN IF NOT EXISTS country_probability NUMERIC;
+  `);
+
   console.log('Database ready');
 }
 
