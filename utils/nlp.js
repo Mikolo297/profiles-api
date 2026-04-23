@@ -45,7 +45,6 @@ const COUNTRY_MAP = {
   'bangladesh': 'BD', 'bangladeshi': 'BD',
   'mexico': 'MX', 'mexican': 'MX',
   'philippines': 'PH', 'filipino': 'PH',
-  'egypt': 'EG',
   'turkey': 'TR', 'turkish': 'TR',
   'iran': 'IR', 'iranian': 'IR',
   'spain': 'ES', 'spanish': 'ES',
@@ -74,7 +73,6 @@ function parseNaturalLanguage(q) {
     filters.gender = 'female';
     matched = true;
   } else if (/\b(male and female|female and male|both genders?|people|persons?|individuals?)\b/.test(text)) {
-    // no gender filter
     matched = true;
   }
 
@@ -101,21 +99,18 @@ function parseNaturalLanguage(q) {
   }
 
   // ── Age comparisons ─────────────────────────────────────────────────────────
-  // "above X" / "over X" / "older than X"
   const aboveMatch = text.match(/(?:above|over|older than|greater than)\s+(\d+)/);
   if (aboveMatch) {
     filters.min_age = parseInt(aboveMatch[1]);
     matched = true;
   }
 
-  // "below X" / "under X" / "younger than X"
   const belowMatch = text.match(/(?:below|under|younger than|less than)\s+(\d+)/);
   if (belowMatch) {
     filters.max_age = parseInt(belowMatch[1]);
     matched = true;
   }
 
-  // "between X and Y"
   const betweenMatch = text.match(/between\s+(\d+)\s+and\s+(\d+)/);
   if (betweenMatch) {
     filters.min_age = parseInt(betweenMatch[1]);
@@ -123,7 +118,6 @@ function parseNaturalLanguage(q) {
     matched = true;
   }
 
-  // "aged X" / "age X"
   const agedMatch = text.match(/aged?\s+(\d+)/);
   if (agedMatch) {
     filters.min_age = parseInt(agedMatch[1]);
@@ -132,7 +126,6 @@ function parseNaturalLanguage(q) {
   }
 
   // ── Country ─────────────────────────────────────────────────────────────────
-  // Try multi-word country names first (longest match)
   const sortedCountries = Object.keys(COUNTRY_MAP).sort((a, b) => b.length - a.length);
   for (const country of sortedCountries) {
     if (text.includes(country)) {
@@ -142,7 +135,6 @@ function parseNaturalLanguage(q) {
     }
   }
 
-  // "from [country]" pattern fallback
   const fromMatch = text.match(/\bfrom\s+([a-z\s]+?)(?:\s+(?:who|with|aged?|above|below|over|under)|$)/);
   if (fromMatch && !filters.country_id) {
     const countryStr = fromMatch[1].trim();

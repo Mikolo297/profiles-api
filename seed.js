@@ -5,7 +5,6 @@ const { getCountryName } = require('./utils/apis');
 const fs = require('fs');
 const path = require('path');
 
-// Parse CSV manually (no external dependency)
 function parseCSV(content) {
   const lines = content.trim().split('\n');
   const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));

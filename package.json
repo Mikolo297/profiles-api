@@ -1,7 +1,7 @@
 {
   "name": "profiles-api",
   "version": "1.0.0",
-  "description": "Stage 1 Backend — Profiles API with PostgreSQL",
+  "description": "Stage 2 Backend — Intelligence Query Engine",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

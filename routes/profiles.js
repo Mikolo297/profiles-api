@@ -68,7 +68,6 @@ router.get('/search', async (req, res) => {
 
   const { filters } = parsed;
 
-  // Build query from parsed filters
   const { conditions, values, nextIndex } = buildFilterQuery(filters);
   let i = nextIndex;
 
@@ -109,7 +108,6 @@ router.get('/search', async (req, res) => {
 router.get('/', async (req, res) => {
   const { sort_by, order, page, limit, ...filterParams } = req.query;
 
-  // Validate sort params
   if (sort_by && !VALID_SORT_BY.includes(sort_by)) {
     return res.status(400).json({ status: 'error', message: 'Invalid query parameters' });
   }
@@ -238,7 +236,7 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-// ── Format helpers ────────────────────────────────────────────────────────────
+// ── Format helper ─────────────────────────────────────────────────────────────
 function formatProfile(row) {
   return {
     id:                  row.id,

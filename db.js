@@ -21,6 +21,14 @@ async function initDB() {
       created_at          TIMESTAMPTZ NOT NULL DEFAULT NOW()
     );
   `);
+
+  // Indexes for query performance
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_gender     ON profiles (LOWER(gender));`);
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_age_group  ON profiles (LOWER(age_group));`);
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_country_id ON profiles (UPPER(country_id));`);
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_age        ON profiles (age);`);
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_profiles_created_at ON profiles (created_at);`);
+
   console.log('Database ready');
 }
 
